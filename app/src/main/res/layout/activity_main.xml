@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#006699"
+    android:clickable="true">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Item"
+        android:id="@+id/scan_tag"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="34dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="scanItemOnClick" />
+
+    <TextView
+        android:text="@string/fetchedvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetchedvalue"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/TagID"
+        android:layout_alignStart="@+id/TagID"
+        android:enabled="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TagID"
+        android:enabled="true"
+        android:textStyle="bold|normal"
+        android:layout_below="@+id/scan_tag"
+        android:layout_alignLeft="@+id/scan_tag"
+        android:layout_alignStart="@+id/scan_tag"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TagID"
+        android:id="@+id/TagIDLabel"
+        android:layout_alignTop="@+id/TagID"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Reference Number"
+        android:id="@+id/refbutton"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/fetchedvalue"
+        android:layout_alignLeft="@+id/fetchedvalue"
+        android:layout_alignStart="@+id/fetchedvalue"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="refbuttonOnClick" />
+
+    <TextView
+        android:text="@string/RFID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rfid"
+        android:textColor="#ffffff"
+        android:enabled="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/refbutton"
+        android:layout_alignStart="@+id/refbutton"
+        android:layout_marginBottom="47dp" />
+
+</RelativeLayout>

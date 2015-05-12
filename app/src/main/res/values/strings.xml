@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GoodSure</string>
+
+    <string name="hello_world">GoodSure Product Authentication and  Information System</string>
+    <string name="action_settings">Settings</string>
+    <string name="fetchedvalue">Fetch</string>
+    <string name="RFID">Fetch</string>
+    <string name="title_activity_gbnfc">GBNFCActivity</string>
+    <string name="intro_message">Testing</string>
+        <string name="title_activity_tag_scan">TagScan</string>
+    <string name="no_nfc">No NFC found</string>
+    <string name="nfc_disabled">NFC is now disabled</string>
+    <string name="error">An NFC error has occurred</string>
+</resources>
